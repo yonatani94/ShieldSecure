@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/encryptFragment_IMG_plainImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/photo_empty_frame"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:scaleType="fitXY" />
+
+    <EditText
+        android:id="@+id/encryptFragment_EDT_inputText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="3"
+        android:background="@drawable/round_edt_border_edges"
+        android:gravity="center"
+        android:hint="Enter a secret message of up to\n 1000 characters. " />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/encryptFragment_BTN_EncryptText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:text="Encrypt Text"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:elevation="50dp"
+        app:icon="@drawable/ic_baseline_lock_24" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/encryptFragment_BTN_saveImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:text="Save image to device"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:elevation="50dp"
+        app:icon="@drawable/ic_baseline_save_24" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/encryptFragment_BTN_share"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:enabled="false"
+        android:text="Share encrypted image"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:elevation="50dp"
+        app:icon="@drawable/ic_baseline_share_24" />
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/decryptFragment_IMG_plainImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/photo_empty_frame"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/decryptFragment_EDT_inputText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="3"
+        android:background="@drawable/round_edt_border_edges"
+        android:gravity="center"
+        android:hint="Choose a picture to decrypt.\nThe secret message will be displayed here. "
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textIsSelectable="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/decryptFragment_BTN_DecryptText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:text="Decrypt Text"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:cornerRadius="30dp"
+        app:elevation="50dp"
+        app:icon="@drawable/ic_baseline_lock_open_24" />
+
+</LinearLayout>
