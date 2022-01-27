@@ -143,34 +143,7 @@ public class EncryptFragment extends Fragment {
     private void shareImage() {
         Log.d(TAG, "shareImage: ");
         Toast.makeText(getContext(), "In Construction!", Toast.LENGTH_SHORT).show();
-//        QuickShot.QuickShotListener quickShotListener = new QuickShot.QuickShotListener() {
-//            @Override
-//            public void onQuickShotSuccess(String path) {
-//                Log.d(TAG, "onQuickShotSuccess: " + path);
-//                Toast.makeText(getContext(), "Image Saved Successfully!", Toast.LENGTH_SHORT).show();
-//                Intent share = new Intent(android.content.Intent.ACTION_SEND);
-//                share.setType("image/png");
-//                Uri photoURI = FileProvider.getUriForFile(getContext()
-//                        , getActivity().getApplicationContext().getPackageName() + ".provider"
-//                        , new File(Environment.getExternalStorageDirectory(), path));
-//                share.putExtra(Intent.EXTRA_STREAM, photoURI);
-//                share.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-//                getContext().startActivity(Intent.createChooser(share, "Share image"));
-//            }
-//
-//            @Override
-//            public void onQuickShotFailed(String path, String errorMsg) {
-//                Log.d(TAG, "onQuickShotFailed: ");
-//                Toast.makeText(getContext(), "Image Saving Failed!", Toast.LENGTH_SHORT).show();
-//                saveImageToDeviceBtn.setEnabled(true);
-//            }
-//        };
-//        QuickShot.of(encryptedBitmap, getContext()).setResultListener(quickShotListener)
-//                .enableLogging()
-//                .setFilename("encrypted_image " + ThreadLocalRandom.current().nextInt(0, 60000 + 1))
-//                .setPath("CipherZ")
-//                .toPNG()
-//                .save();
+
     }
 
 
