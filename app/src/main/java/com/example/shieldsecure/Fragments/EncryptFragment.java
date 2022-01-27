@@ -211,7 +211,7 @@ public class EncryptFragment extends Fragment {
         QuickShot.of(encryptedBitmap, getContext()).setResultListener(quickShotListener)
                 .enableLogging()
                 .setFilename(filename)
-                .setPath("CipherZ")
+                .setPath("ShieldSecure")
                 .toPNG()
                 .save();
     }

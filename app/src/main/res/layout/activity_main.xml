@@ -5,7 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <ImageView
+        android:id="@+id/main_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"></ImageView>
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/main_LAY_pager"
         android:layout_width="match_parent"

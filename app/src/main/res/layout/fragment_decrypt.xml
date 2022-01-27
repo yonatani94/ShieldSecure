@@ -10,8 +10,8 @@
         android:id="@+id/decryptFragment_IMG_plainImage"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4"
-        android:background="@drawable/photo_empty_frame"
+        android:layout_weight="3"
+        android:background="@drawable/icons_add_image"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
@@ -26,10 +26,13 @@
         android:layout_weight="3"
         android:background="@drawable/round_edt_border_edges"
         android:gravity="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:hint="Choose a picture to decrypt.\nThe secret message will be displayed here. "
         android:padding="10dp"
         android:scrollbars="vertical"
-        android:textIsSelectable="true" />
+        android:textIsSelectable="true"
+        android:textStyle="bold" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/decryptFragment_BTN_DecryptText"
@@ -38,7 +41,9 @@
         android:layout_weight="1"
         android:enabled="false"
         android:text="Decrypt Text"
+        android:fontFamily="@font/button"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:cornerRadius="30dp"
         app:elevation="50dp"

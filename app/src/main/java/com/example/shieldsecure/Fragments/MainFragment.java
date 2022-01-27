@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 
+import com.bumptech.glide.Glide;
 import com.example.shieldsecure.R;
 
 import org.jetbrains.annotations.NotNull;
@@ -32,7 +34,7 @@ public class MainFragment extends Fragment {
     // https://github.com/sameerkumar18/useless-facts-api
     protected View view;
     private TextView factLabel;
-
+   private ImageView fragment_IMG_background;
     public MainFragment() {
     }
 
@@ -46,12 +48,22 @@ public class MainFragment extends Fragment {
         }
         initViews();
         generateJoke();
-
+        addPIcWithGlide();
         return view;
     }
+    private void addPIcWithGlide() {
+        Glide
+                .with(MainFragment.this)
+                .load(R.drawable.back)
+                .centerCrop()
+                .into(fragment_IMG_background);
 
+
+
+    }
     private void initViews() {
         factLabel = view.findViewById(R.id.main_LBL_factOfTheDay);
+        fragment_IMG_background = view.findViewById(R.id.fragment_IMG_background);
         factLabel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

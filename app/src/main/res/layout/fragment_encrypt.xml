@@ -6,12 +6,13 @@
     android:orientation="vertical"
     android:padding="20dp">
 
+
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/encryptFragment_IMG_plainImage"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
-        android:background="@drawable/photo_empty_frame"
+        android:background="@drawable/icons_add_image"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
@@ -24,6 +25,9 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:layout_weight="3"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:background="@drawable/round_edt_border_edges"
         android:gravity="center"
         android:hint="Enter a secret message of up to\n 1000 characters. " />
@@ -35,8 +39,10 @@
         android:layout_weight="1"
         android:enabled="false"
         android:text="Encrypt Text"
+        android:textColor="@color/white"
         android:textAllCaps="false"
         android:textSize="20sp"
+        android:fontFamily="@font/button"
         app:cornerRadius="30dp"
         app:elevation="50dp"
         app:icon="@drawable/ic_baseline_lock_24" />
@@ -45,11 +51,14 @@
         android:id="@+id/encryptFragment_BTN_saveImage"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:textColor="@color/white"
         android:layout_weight="1"
         android:enabled="false"
         android:text="Save image to device"
         android:textAllCaps="false"
         android:textSize="20sp"
+        android:fontFamily="@font/button"
+
         app:cornerRadius="30dp"
         app:elevation="50dp"
         app:icon="@drawable/ic_baseline_save_24" />
@@ -63,10 +72,12 @@
         android:enabled="false"
         android:text="Share encrypted image"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:cornerRadius="30dp"
+        android:fontFamily="@font/button"
         app:elevation="50dp"
-        app:icon="@drawable/ic_baseline_share_24" />
+        app:icon="@drawable/ic_baseline_add_a_photo_24" />
 
 
 </LinearLayout>

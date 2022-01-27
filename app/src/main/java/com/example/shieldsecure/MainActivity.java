@@ -7,9 +7,12 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 
+import com.bumptech.glide.Glide;
 import com.example.shieldsecure.Adapter.ViewPagerAdapter;
+import com.example.shieldsecure.Fragments.MainFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
     private ViewPager2 viewPager;
-
+    private ImageView main_IMG_background ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initViews();
         initViewPager();
+        addPIcWithGlide();
+
+    }
+
+    private void addPIcWithGlide() {
+        Glide
+                .with(MainActivity.this)
+                .load(R.drawable.back)
+                .centerCrop()
+                .into(main_IMG_background);
+
     }
 
 
@@ -63,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
     private void initViews() {
         viewPager = findViewById(R.id.main_LAY_pager);
         bottomNavigationView = findViewById(R.id.main_bottom_navigation);
+        main_IMG_background = findViewById(R.id.main_IMG_background);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
