@@ -26,8 +26,8 @@ Including:
 
 #### Encryption:
 
-<img src=" " width="200" />
+<img src="https://github.com/yonatani94/ShieldSecure/blob/dev/external_files/encrypt.gif" width="200" />
 
 #### Decryption:
 
-<img src=" " width="200" />
+<img src="https://github.com/yonatani94/ShieldSecure/blob/dev/external_files/decrypt.gif" width="200" />
