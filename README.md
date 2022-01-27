@@ -3,8 +3,8 @@
 
 
 
-### A text encryption app that can hide a secret message inside an image.
-### The app can encrypt and decrept secret text messages that are hidden inside an image.
+### A ShieldSecure application capable of concealing a hidden message within a picture.
+### The app can encrypt and decrypt hidden text messages contained within images.
 
 Including:
 - Image encryption
