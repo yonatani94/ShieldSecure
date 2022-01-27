@@ -22,7 +22,7 @@ Including:
 
 #### Decryption page:
 
-<img src=" https://github.com/yonatani94/ShieldSecure/blob/dev/external_files/decrypt.png" width="200" />
+<img src="https://github.com/yonatani94/ShieldSecure/blob/dev/external_files/decrypt.png" width="200" />
 
 #### Encryption:
 
